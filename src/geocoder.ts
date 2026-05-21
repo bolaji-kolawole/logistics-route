@@ -5,7 +5,8 @@ export interface LrGeocodeResult {
 }
 
 export async function convertAddressToLatLng(address: string): Promise<LrGeocodeResult | null> {
-  const url = `https://openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&limit=1`;
+  // Correct subdomain endpoint for JSON API queries
+  const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&limit=1`;
   
   try {
     const response = await fetch(url, {
@@ -19,8 +20,8 @@ export async function convertAddressToLatLng(address: string): Promise<LrGeocode
 
     if (data && data.length > 0) {
       return {
-        lat: parseFloat(data[0].lat),
-        lng: parseFloat(data[0].lon),
+        lat: parseFloat(data[0].lat), // Remember to read the first array element [0]
+        lng: parseFloat(data[0].lon), // Nominatim uses 'lon' for longitude
         displayName: data[0].display_name
       };
     }

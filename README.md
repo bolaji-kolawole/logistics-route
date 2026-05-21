@@ -86,4 +86,4 @@ npm run build
 
 ## License
 
-Distributed under the terms of the permissive **MIT License**. For complete visibility on legal software protections and developer usage allowances, review the [LICENSE](./LICENSE) file contained within this repository.
+Distributed under the terms of the permissive **MIT License**. For complete visibility on legal software protections and developer usage allowances, review the [LICENSE](./LICENSE.md) file contained within this repository.
