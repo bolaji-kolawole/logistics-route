@@ -1,6 +1,6 @@
 {
   "name": "logistics-route",
-  "version": "0.0.1",
+  "version": "0.0.12",
   "description": "TypeScript logistics library using for calculating distances.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

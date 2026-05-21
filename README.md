@@ -1,4 +1,4 @@
-# /logistics-route
+# logistics-route
 
 A high-performance, zero-dependency TypeScript engine designed to estimate real-world logistics shipping and delivery distances using OpenStreetMap coordinates. 
 
@@ -16,7 +16,7 @@ By utilizing a native mathematical implementation of the Haversine formula combi
 Install the library into your project workspace using your preferred package manager:
 
 ```bash
-npm install /logistics-route
+npm install logistics-route
 ```
 
 ## 🛠️ Usage Examples
@@ -25,7 +25,7 @@ npm install /logistics-route
 If you already possess the GPS coordinates (Latitude and Longitude) for your fleet dispatch, use the core calculation engine directly:
 
 ```typescript
-import { calculateLogisticsKm } from '/logistics-route';
+import { calculateLogisticsKm } from 'logistics-route';
 
 // Example: London coordinates to Manchester coordinates
 const originLat = 51.5074;
@@ -43,7 +43,7 @@ console.log(`Estimated Driving Distance: ${routeKm} km`);
 Pass raw string addresses directly to resolve locations via OpenStreetMap and calculate your logistics metrics in a single async workflow:
 
 ```typescript
-import { getRouteDistanceBetweenAddresses } from '/logistics-route';
+import { getRouteDistanceBetweenAddresses } from 'logistics-route';
 
 async function processDelivery() {
   const routeData = await getRouteDistanceBetweenAddresses(
