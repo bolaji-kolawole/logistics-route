@@ -1,0 +1,23 @@
+{
+  "name": "logistics-route",
+  "version": "0.0.1",
+  "description": "TypeScript logistics library using for calculating distances.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": ["logistics", "distance", "haversine", "openstreetmap", "route", "typescript"],
+  "author": "iAmBsquare",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.9.1",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.10",
+    "typescript": "^6.0.3"
+  }
+}
